@@ -1,0 +1,249 @@
+/*=============================================Tooltip===========================================*/
+.badge-container{
+  top: 10px;
+  padding-left: 50px; 
+  position: relative;
+  display: inline-block;
+}
+
+.badge-container .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.badge-container .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+.badge-container:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*======================================Draw Badges Outline======================================*/
+.badge-bg {
+  width: 80px;
+  height: 120px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  /*background-color: #696969;*/
+  -webkit-box-shadow: 2px 2px #eee;
+  box-shadow: 2px 2px #eee; }
+
+.badge-in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*background-color: #808080;*/
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px; }
+
+.badge-in.blue{ background-color: #0391dd; }
+
+.badge-lv {
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  font-size: 12px;
+  color: #808080; }
+
+.badge-icon {
+  text-align: center;
+  padding-top: 25px;
+  color: #505050; }
+
+.badge-for {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  font-size: 12px;
+  color: #696969; }
+
+.sector {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #696969;
+  border-radius: 20px 0 0; }
+
+.firstlv .badge-bg {
+  background-color: #BFA100; }
+.firstlv .sector {
+  background-color: #BFA100; }
+.firstlv .badge-for {
+  color: white; }
+.firstlv .badge-icon {
+  color: #BFA100; }
+.firstlv .badge-in {
+  background-color: #FFD700; }
+.firstlv .badge-lv {
+  color: white; }
+.firstlv .badge-in {
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top left, #fceabb 0%, #FCCD4D 50%, #F8B500 51%, #fbdf93 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #fceabb 0%, #FCCD4D 50%, #F8B500 51%, #fbdf93 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #fceabb 0%, #FCCD4D 50%, #F8B500 51%, #fbdf93 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #fceabb), color-stop(50, #FCCD4D), color-stop(51, #F8B500), color-stop(100, #fbdf93));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #fceabb 0%, #FCCD4D 50%, #F8B500 51%, #fbdf93 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom right, #fceabb 0%, #FCCD4D 50%, #F8B500 51%, #fbdf93 100%); }
+
+.secondlv .badge-bg {
+  background-color: #8b8888; }
+.secondlv .sector {
+  background-color: #8b8888; }
+.secondlv .badge-for {
+  color: white; }
+.secondlv .badge-icon {
+  color: #8b8888; }
+.secondlv .badge-in {
+  background-color: #c0c0c0; }
+.secondlv .badge-lv {
+  color: white; }
+.secondlv .badge-in {
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top left, #E8E8E8 0%, #E5EBEE 50%, #D0D6DB 51%, #f5f7f9 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #E8E8E8 0%, #E5EBEE 50%, #D0D6DB 51%, #f5f7f9 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #E8E8E8 0%, #E5EBEE 50%, #D0D6DB 51%, #f5f7f9 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #E8E8E8), color-stop(50, #E5EBEE), color-stop(51, #D0D6DB), color-stop(100, #f5f7f9));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #E8E8E8 0%, #E5EBEE 50%, #D0D6DB 51%, #f5f7f9 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom right, #E8E8E8 0%, #E5EBEE 50%, #D0D6DB 51%, #f5f7f9 100%); }
+
+.thirdlv .badge-bg {
+  background-color: #785807; }
+.thirdlv .sector {
+  background-color: #785807; }
+.thirdlv .badge-for {
+  color: white; }
+.thirdlv .badge-icon {
+  color: #785807; }
+.thirdlv .badge-in {
+  background-color: #B88607; }
+.thirdlv .badge-lv {
+  color: white; }
+.thirdlv .badge-in {
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top left, #F3E2C7 0%, #C19E67 50%, #B68D4C 51%, #e9d4b3 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #F3E2C7 0%, #C19E67 50%, #B68D4C 51%, #e9d4b3 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #F3E2C7 0%, #C19E67 50%, #B68D4C 51%, #e9d4b3 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #F3E2C7), color-stop(50, #C19E67), color-stop(51, #B68D4C), color-stop(100, #e9d4b3));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #F3E2C7 0%, #C19E67 50%, #B68D4C 51%, #e9d4b3 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom right, #F3E2C7 0%, #C19E67 50%, #B68D4C 51%, #e9d4b3 100%); }
+
+.fourthlv .badge-bg {
+  background-color: #537c8d; }
+.fourthlv .sector {
+  background-color: #537c8d; }
+.fourthlv .badge-for {
+  color: white; }
+.fourthlv .badge-icon {
+  color: #537c8d; }
+.fourthlv .badge-in {
+  background-color: #9dbcc8; }
+.fourthlv .badge-lv {
+  color: white; }
+
+.fifthlv .badge-bg {
+  background-color: #6b96a8; }
+.fifthlv .sector {
+  background-color: #6b96a8; }
+.fifthlv .badge-for {
+  color: white; }
+.fifthlv .badge-icon {
+  color: #6b96a8; }
+.fifthlv .badge-in {
+  background-color: #bed2db; }
+.fifthlv .badge-lv {
+  color: white; }
+
+.sixthlv .badge-bg {
+  background-color: #8badbb; }
+.sixthlv .sector {
+  background-color: #8badbb; }
+.sixthlv .badge-for {
+  color: white; }
+.sixthlv .badge-icon {
+  color: #8badbb; }
+.sixthlv .badge-in {
+  background-color: #dee9ed; }
+.sixthlv .badge-lv {
+  color: white; }
+
+.nolv .badge-bg {
+  background-color: #cccccc; }
+.nolv .sector {
+  background-color: #cccccc; }
+.nolv .badge-for {
+  color: white; }
+.nolv .badge-icon {
+  color: #cccccc; }
+.nolv .badge-in {
+  background-color: #e5e5e5; }
+.nolv .badge-lv {
+  color: white; }
+
+.badge-container {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=Badge.css.map */
+
+
+.lv-box{
+  border-radius: 5px;
+  width: 30px;
+  margin-left: 25px;
+}
+.badge-layout{
+  text-align: center; 
+}

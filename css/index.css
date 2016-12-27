@@ -1,0 +1,24 @@
+.container-top{
+	width: 100%;
+	height: 100%;
+	font-family: "Oswald", "微軟正黑體", sans-serif;
+}
+.big-box{
+	width: 90%;
+	margin: 10px auto;
+	border-radius: 5px;
+	background-color: rgb(229,229,229);
+}
+.title{
+	padding: 20px;
+	font-weight: bolder;
+	color: rgb(65, 98, 111);
+}
+
+.google-sheet{
+	height: 150px;
+}
+#files{
+	margin-left: 50px;
+}
+

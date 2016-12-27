@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<link rel="stylesheet" type="text/css" href="css/Badge.css">
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+<title>Register</title>
+</head>
+<body>
+<div class="container-top">
+	<header>
+		<h1 class="header-title">課程管理介面</h1>
+	</header>
+	<div class="event-set big-box">
+		<h2 class="title">EVENT ADD</h2>
+		<div class="event-type col-md-2">
+			<h5>欲新增事件類別：</h5>
+			<form>
+				<select class="box type-select" name="eventType">
+				<option></option>
+				<option value="grade">成績類</option>
+				<option value="frequrncy">計次類</option>
+				<option value="other">其他</option>
+				</select>
+			</form>
+		</div>
+		<div class="type-option col-md-2">
+			<div class="grade-type">
+				<h5>成績項目</h5>
+				<input class="box grade-box" type="text" name="gradeType"></input>
+			</div>
+			<div class="frequency-type">
+				<h5>計次項目</h5>
+				<input class="box frequency-box" type="text" name="frequencyType"></input>
+			</div>
+			<div class="other-type">	
+				<h5>其他事件</h5>
+				<input class="box other-box" type="text" name="otherOption"></input>	
+			</div>
+		</div>
+		<div class="type-limit col-md-2">
+			<h5>項目門檻</h5>
+			<form>
+				<select class="box event-limit" name="eventLimit">
+					<option></option>
+					<option>100</option>
+					<option>90-99</option>
+					<option>80-89</option>
+					<option>70-79</option>
+					<option>60-69</option>
+					<option>60以下</option>
+				</select>
+			</form>
+		</div>
+		<div class="enter-btn col-md-2">
+			<h5><br><h5>
+			<button type="button" class="grade-enter btn btn-primary">確認</button>
+			<button type="button" class="frequency-enter btn btn-primary">確認</button>
+			<button type="button" class="other-enter btn btn-primary">確認</button>
+		</div>
+	</div>
+
+	<div class="event-upload big-box">
+	<h2 class="title">EVENT UPLOAD</h2>
+		<div class="stu-info col-md-2">
+			<h5>學生資訊</h5>
+			<input class="text box" name="stuId"></input>
+		</div>
+		<!--<button type="button" class="btn btn-primary event-list-btn col-md-2" data-toggle="modal" data-target="#myModal">
+  			Event List
+		</button>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  			<div class="modal-dialog">
+    			<div class="modal-content">
+      				<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        				<h4 class="modal-title" id="myModalLabel">Event Select</h4>
+      				</div>
+      				<div class="modal-body">
+        				<form>
+        					成績類：<br>
+        					<div class="option-list grade-list"></div>
+        					計次類：<br>
+        					<div class="option-list frequency-list"></div>
+        				</form>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        				<button type="button" class="event-choice-btn btn btn-primary" >Enter</button>
+      				</div>
+    			</div>
+  			</div>
+		</div>-->
+	</div>
+
+	<div class="badge-class big-box">
+		<h2 class="title">BADGE CLASS</h2>
+		<div id="event-choose" class="col-md-6 badge-item">
+			<button type="button" class="btn btn-primary event-list-btn" data-toggle="modal" data-target="#eventModal">
+  				Event List
+			</button>
+			<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close	</span></button>
+        					<h4 class="modal-title" id="myModalLabel">Event Select</h4>
+      					</div>
+      					<div class="modal-body">
+        					<form>
+        						成績類：<br>
+        						<div class="option-list grade-list"></div>
+        						計次類：<br>
+        						<div class="option-list frequency-list"></div>
+        					</form>
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        					<button type="button" class="event-choice-btn btn btn-primary">Enter</button>
+      					</div>
+    				</div>
+  				</div>
+  			</div>
+  			<div class="chosen-event">
+  				<input class="text chosenEvent box" placeholder="點擊Event List"></input>
+  			</div>
+  		</div>
+  		
+  		<div id="icon-choose" class="col-md-2 badge-item">
+			<button type="button" class="btn btn-primary icon-list-btn"  data-toggle="modal" data-target="#badgeModal">
+  				Badge Icon
+			</button>
+			<!-- Modal -->
+			<div class="modal fade row" id="badgeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        					<h4 class="modal-title" id="myModalLabel">Icon Set</h4>
+      					</div>
+      					<div class="modal-body">
+      						BADGE ICON:
+      						<div class="icon-list"></div>
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        					<button type="button" class="badge-choice-btn btn btn-primary">Enter</button>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+		<div class="chosen-icon col-md-1"></div>
+
+		<div class="col-md-6 badge-item">
+			<button type="button" class="btn btn-primary badge-lv-enter" disabled="disabled" >Badge Level</button>
+			<select class="form-control badge-level-option">
+				<option></option>
+  				<option>1</option>
+  				<option>2</option>
+  				<option>3</option>
+  				<option>4</option>
+  				<option>5</option>
+  				<option>6</option>
+			</select>
+		</div>
+		<div class="col-md-6 badge-item">
+			<button type="button" class="btn btn-primary badge-name-enter" disabled="disabled">Badge Name</button>
+			<input class="text badge-name box" placeholder="輸入Badge名稱"></input>
+		</div>
+		<div class="badge-set-enter col-md-6 badge-item">
+			<button type="button" class="btn btn-primary badge-enter">ENTER</button>
+		</div>
+	</div>
+
+	<div class="badge-set big-box">
+		<div>
+			<h2 class="title">BADGE SET</h2>
+		</div>
+		<div id="badgeSetArea">
+			
+		</div>
+	</div>
+</div>
+	<template id="badge" >
+		<div class="badge-container">
+			<div class="badge-layout"><span>{{name}}{{level}}</span></div>
+			<div :class="derivedClass">
+				<span class="tooltiptext">{{textInBox}}</span>
+				<div class="badge-bg">
+					<div class="badge-in ">
+						<span class="badge-for ">{{name}}</span>
+						<div class="badge-icon">
+							<div>{{{iconClass}}}</div>
+						</div>
+						<div class="sector ">
+							<h5 class="badge-lv">{{lv}}</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input class="lv-box" type="text" v-model="lv"></input>
+		</div>
+	</template>
+
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+<script src="https://rawgit.com/wenzhixin/vue-bootstrap-table/develop/docs/static/dist/vue-bootstrap-table.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/Badge.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/parsefonely.js"></script>
+
+
+
+<!-- Radian's reference -->
+
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/bower/parse/parse.min.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/js/key.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/js/ParseExtension.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/js/SubClass.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/bower/vue/dist/vue.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/bower/moment/min/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/bower/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="http://programming101.cs.nccu.edu.tw:18000/js/all.js"></script>
+
+</body>
+</html>

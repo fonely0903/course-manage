@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*================All css===============*/
+.container-top{
+	width: 100%;
+	height: 100%;
+	font-family: "Oswald", "微軟正黑體", sans-serif;
+}
+.big-box{
+	width: 90%;
+	margin: 10px auto;
+	border-radius: 5px;
+	background-color: rgb(229,229,229);
+}
+header{
+	width: 100%;
+	height: 50px;
+	background:#426172;
+	margin-top: -20px;
+}
+.header-title{
+	color:#fff;
+	text-decoration:none;
+	padding: 5px;
+}
+/*======================================*/
+.event-set{
+	height: 250px;
+}
+.event-upload{
+	height:  250px;
+}
+.badge-item{
+	height: 60px;
+	margin-top: 40px; 
+	display: inline;
+}
+.badge-class{
+	height:  400px;
+}
+.badge-set{
+	height:  300px;
+}
+.title{
+	padding: 20px;
+	font-weight: bolder;
+	color: rgb(65, 98, 111);
+}
+select{
+	height: 25px;
+	width: 120px;
+}
+.option-radio{
+	height:30px; 
+	width:125px;
+	margin: 5px;
+	text-align: left;
+}
+.option-list{
+	margin-left: 40px;
+}
+.option-list input[type="radio"]{
+	display: none;
+}
+.option-list input[type="radio"]+label{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px; 
+}
+.option-list input[type="radio"]:checked+label{
+	background-color: #333;
+	color: #fff;
+}
+.icons{
+	margin: 2px;
+	border-radius: 5px;
+	text-align: center;
+	height: 70px;
+	width: 90px;
+}
+.icon-list{
+	margin-left: 40px;
+}
+.icon-list input[type="radio"]{
+	display: none;
+}
+.icon-list input[type="radio"]+label{
+	display: inline-block;
+	background-color: #ccc;
+	cursor: pointer;
+	padding: 5px 10px; 
+}
+.icon-list input[type="radio"]:checked+label{
+	background-color: #333;
+	color: #fff;
+}
+
+.chosen-event{
+	display: inline;
+	margin-top: 60px;
+}
+.chosen-icon{
+	display: inline;
+	margin-left: -25px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.badge-level-option{
+	display: inline;
+	margin-left: 10px;
+	width: 150px;
+}
+.badge-set-enter{
+	display: none;
+}
+.btn{
+	/*margin-top: 50px;*/
+	margin-left: 10px;
+	margin-bottom: 0px;
+	height: 30px;
+	width: 120px;
+}
+.box{
+	height: 30px;
+	width: 150px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.grade-type{
+	display: none;
+}
+.frequency-type{
+	display: none;
+}
+.other-type{
+	display: none;
+}
+.type-limit{
+	margin-left: 10px;
+	display: none;
+}
+.grade-enter{
+	display: none;
+}
+.frequency-enter {
+	display: none;
+}
+.other-enter{
+	display: none;
+}
